@@ -128,12 +128,12 @@ while runGame:
   render.setDrawColor(255, 0, 0)
 
   for i in 0..11:
-    r.x = cint(center[0] - rh + int(ra * sin(2.0 * PI * float(i) / 12.0)))
-    r.y = cint(center[1] - rh - int(ra * cos(2.0 * PI * float(i) / 12.0)))
+    r.x = cint(center[0] - rh + int(0.9 * ra * sin(2.0 * PI * float(i) / 12.0)))
+    r.y = cint(center[1] - rh - int(0.9 * ra * cos(2.0 * PI * float(i) / 12.0)))
     render.fillRect(r)
   for i in 0..s:
-    r.x = cint(center[0] - rh + int(0.9 * ra * sin(2.0 * PI * float(i) / 60.0)))
-    r.y = cint(center[1] - rh - int(0.9 * ra * cos(2.0 * PI * float(i) / 60.0)))
+    r.x = cint(center[0] - rh + int(ra * sin(2.0 * PI * float(i) / 60.0)))
+    r.y = cint(center[1] - rh - int(ra * cos(2.0 * PI * float(i) / 60.0)))
     render.fillRect(r)
 
   for j in 0..24:
